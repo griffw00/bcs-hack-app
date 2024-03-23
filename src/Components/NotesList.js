@@ -3,12 +3,10 @@
 // Need to pass in data as a prop
 // We need to map each note into an ul
 
-import React from 'react';
+import React from "react";
 
-function NotesList(address, text) {
-    return(
-        <Note></>;
-    ); 
+function NotesList({ notes, address, text }) {
+  return <Note text={text} />;
 }
 
-export default NotesList; 
+export default NotesList;
