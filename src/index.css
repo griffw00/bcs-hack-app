@@ -27,5 +27,34 @@
   border-radius: 5px;
 }
 
+.homepage {
+  width: 100%;
+  height: 100%;
+}
 
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
+.homepage_content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
+
+.video_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 116%;
+  background-color: rgba(0,0,0,.4);
+}
