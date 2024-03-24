@@ -1,7 +1,9 @@
+import "./index.css";
+import { useState, useEffect } from "react";
+import Cell from "./Components/Cell.js";
 import { React, useState }from 'react';
 import './App.css';
 import { Drawer, List, ListItem, ListItemText, ListItemButton } from '@mui/material';
-import Cells from './Components/cells';
 import Homepage from './Components/home';
 
 const drawerWidth = 240;
@@ -17,7 +19,7 @@ function App() {
   function renderCurrentComponent() {
     switch (currentPage) {
       case 1: 
-        return <Cells />;
+        return <Cell />;
       case 2:
         return <h1>PLANTS</h1>;
       case 3: 
