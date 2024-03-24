@@ -1,10 +1,10 @@
 import "./index.css";
-import { useState, useEffect } from "react";
 import Cell from "./Components/Cell.js";
 import { React, useState }from 'react';
 import './App.css';
 import { Drawer, List, ListItem, ListItemText, ListItemButton } from '@mui/material';
 import Homepage from './Components/home';
+import Plant from "./Plant.js";
 
 const drawerWidth = 240;
 
@@ -21,7 +21,7 @@ function App() {
       case 1: 
         return <Cell />;
       case 2:
-        return <h1>PLANTS</h1>;
+        return <Plant />
       case 3: 
         return <h1>anatomy!??!??!</h1>
       default: 
@@ -53,7 +53,7 @@ function App() {
           ))}
         </List>
       </Drawer>
-      <div> { renderCurrentComponent() } </div>
+      <div style={{ marginLeft: drawerWidth }}> { renderCurrentComponent() } </div>
     </div>
   );
 }

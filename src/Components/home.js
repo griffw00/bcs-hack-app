@@ -7,8 +7,8 @@ function Homepage() {
             <div className="video_overlay"></div>
             <video src={ videoBG } autoPlay loop muted />
             <div className="homepage_content">
-                <h1>Welcome </h1>
-                <h2>to learning redefined</h2>
+                <h1>Welcome! </h1>
+                <h2>Choose what to learn on the left.</h2>
             </div>
         </div>
     );
