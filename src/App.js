@@ -1,23 +1,58 @@
-import logo from './logo.svg';
+import { React, useState }from 'react';
 import './App.css';
+import { Drawer, List, ListItem, ListItemText, ListItemButton } from '@mui/material';
+import Cells from './Components/cells';
+import Homepage from './Components/home';
+
+const drawerWidth = 240;
 
 function App() {
+  const [currentPage, setCurrentPage] = useState(null); 
+  const DrawerList = ["home", "cells", "plants", "anatomy"];
+
+  function handleListClick(index) {
+    setCurrentPage(index);
+  }
+
+  function renderCurrentComponent() {
+    switch (currentPage) {
+      case 1: 
+        return <Cells />;
+      case 2:
+        return <h1>PLANTS</h1>;
+      case 3: 
+        return <h1>anatomy!??!??!</h1>
+      default: 
+        return <Homepage />
+    }
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Drawer
+            sx={{
+              width: drawerWidth,
+              flexShrink: 0,
+              '& .MuiDrawer-paper': {
+                width: drawerWidth,
+                boxSizing: 'border-box',
+              },
+            }}
+            variant="permanent"
+            anchor="left">
+        <List>
+          {DrawerList.map((item, index) => (
+            <ListItemButton 
+              key={index}
+              onClick={() => handleListClick(index)}
+            >
+              <ListItemText primary={item} />
+            </ListItemButton>
+          ))}
+        </List>
+      </Drawer>
+      <h1>this is the current page: { currentPage }</h1>
+      <div> { renderCurrentComponent() } </div>
     </div>
   );
 }
