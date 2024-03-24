@@ -111,28 +111,19 @@ function Plant() {
   return (
     <div className="App" onMouseMove={handleMouseMove}>
       <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <p>
-          LET'S LEARN ABOUT PLANTS
-        </p>
-        <div className="textbox" style={{ top: mousePosition.y, left: mousePosition.x }}>
-          {textBoxText}
-        </div>
-        <div className="textboxRight">{textBoxText2}</div>
-        <div className="textboxTitle">{textBoxTextTitle}</div>
-        {/* <div> */}
-        {/* <img
-        src="https://images.edrawmax.com/article/science-diagrams/plant/parts-of-plant.jpg"
-        alt="react logo"
-      /> */}
-        {/* <div style={{ backgroundImage: "url(/plant.png)" }}>
-          Hello World
-        </div> */}
-        {/* <button onClick={clicked1}>Item1 </button>
-        </div>
-        <div>
-          <button style={{ display: "none" }}>Hidden Button</button>
-        </div> */}
+
+
+          <div className="textbox" style={{ top: mousePosition.y, left: mousePosition.x }}>
+            {textBoxText}
+          </div>
+          <div className='textboxRight'>
+            <div className="textboxRight">{textBoxText2}</div>
+            <div className="textboxTitle">{textBoxTextTitle}</div>
+          </div>
+
+
+        
+
           <div className="image-container">
           <img src="plant.png" alt="plant" className="image" />
 

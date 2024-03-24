@@ -1,29 +1,18 @@
 .App {
   text-align: center;
   position: relative;
+  height: 100%;
 }
 
 .App img {
   height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-
 .App-header {
   background-color: rgb(212, 228, 220);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(40px + 2vmin);
@@ -34,18 +23,11 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .image-container {
-  position: relative; /* Make sure the container is positioned relatively */
+  position: absolute; /* Make sure the container is positioned relatively */
   display: inline-block; /* Ensure the container only occupies the space it needs */
+  top: 200px; 
+  left: 30px;
 }
 
 .button1 {
@@ -254,8 +236,8 @@
 
 .textboxRight {
   position: absolute;
-  top: 550px; /* Adjust distance from the button top */
-  right: 100px; /* Adjust distance from the button right */
+  top: 8ch; /* Adjust distance from the button top */
+  right: -1ch; /* Adjust distance from the button right */
   background-color: #fff;
   border: 3px solid #ccc;
   padding: 5px;
@@ -266,8 +248,8 @@
 
 .textboxTitle {
   position: absolute;
-  top: 400px; /* Adjust distance from the button top */
-  right: 100px; /* Adjust distance from the button right */
+  top: 0ch; /* Adjust distance from the button top */
+  right: 0ch; /* Adjust distance from the button right */
   background-color: #fff;
   border: 3px solid #ccc;
   padding: 5px;
