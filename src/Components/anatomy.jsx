@@ -19,30 +19,30 @@ export function Anatomy() {
 
     function handleMouseEnterHeart() {
         setTextBoxText("Heart");
-        setTextBoxText2("The Heart pumps blood throught out the body. It sends blood without oxygen to the lungs, and then gets the blood now with oxygen back from the lungs and sends it to the body");
+        //setTextBoxText2("The Heart pumps blood throught out the body. It sends blood without oxygen to the lungs, and then gets the blood now with oxygen back from the lungs and sends it to the body");
 
     }
 
     function handleMouseEnterIntestines() {
         setTextBoxText("Intestines");
-        setTextBoxText2("There are 2 intestine systems! The small intestine where alot of nutrients from your food is absorbed into the body, and the large intestine where the leftover food is turned into waste");
+        //setTextBoxText2("There are 2 intestine systems! The small intestine where alot of nutrients from your food is absorbed into the body, and the large intestine where the leftover food is turned into waste");
 
     }
 
     function handleMouseEnterLiver() {
         setTextBoxText("Liver");
-        setTextBoxText2("The Liver is very important in making sure our body functions properly. It creates special proteins called enzymes that help break down food and help remove toxic chemicals that we might have eaten");
+        //setTextBoxText2("The Liver is very important in making sure our body functions properly. It creates special proteins called enzymes that help break down food and help remove toxic chemicals that we might have eaten");
     }
 
     function handleMouseEnterLungs() {
         setTextBoxText("Lungs");
-        setTextBoxText2("The Lungs take oxygen from the air we breathe in and give it to our red blood cells. They also remove carbon dioxide from our read blood cells when we breathe out");
+        //setTextBoxText2("The Lungs take oxygen from the air we breathe in and give it to our red blood cells. They also remove carbon dioxide from our read blood cells when we breathe out");
 
     }
 
     function handleMouseEnterStomach() {
         setTextBoxText("Stomach");
-        setTextBoxText2("The Stomach helps break down our food into a mush call chyme, which makes it easier for our body to absorb nutrients");
+        //setTextBoxText2("The Stomach helps break down our food into a mush call chyme, which makes it easier for our body to absorb nutrients");
         
     }
 
@@ -50,9 +50,32 @@ export function Anatomy() {
         setMousePosition({ x: event.clientX, y: event.clientY });
     }
 
-    function clickedBody() {
+    function clickedHeart() {
+        setTextBoxText2("The Heart pumps blood throught out the body. It sends blood without oxygen to the lungs, and then gets the blood now with oxygen back from the lungs and sends it to the body");
+    }
+
+    function clickedStomach() {
+        setTextBoxText2("The Stomach helps break down our food into a mush call chyme, which makes it easier for our body to absorb nutrients");
 
     }
+
+    function clickedIntestine() {
+        setTextBoxText2("There are 2 intestine systems! The small intestine where alot of nutrients from your food is absorbed into the body, and the large intestine where the leftover food is turned into waste");
+
+
+    }
+
+    function clickedLiver() {
+        setTextBoxText2("The Liver is very important in making sure our body functions properly. It creates special proteins called enzymes that help break down food and help remove toxic chemicals that we might have eaten");
+
+    }
+
+    function clickedLungs() {
+        setTextBoxText2("The Lungs take oxygen from the air we breathe in and give it to our red blood cells. They also remove carbon dioxide from our read blood cells when we breathe out");
+
+
+    }
+
 
     return (
         <div className="anatomy-container" onMouseMove={handleMouseMove}> {/* Apply CSS class for container */}
@@ -72,29 +95,29 @@ export function Anatomy() {
             <button
             onMouseEnter={handleMouseEnterLungs}
             onMouseLeave={handleMouseLeave}
-            onClick={clickedBody} className="buttonlungs">Lungs</button>
+            onClick={clickedLungs} className="buttonlungs">Lungs</button>
             
             <button
             onMouseEnter={handleMouseEnterHeart}
             onMouseLeave={handleMouseLeave}
-            onClick={clickedBody} className="buttonheart">Heart</button>
+            onClick={clickedHeart} className="buttonheart">Heart</button>
 
 <button
             onMouseEnter={handleMouseEnterLiver}
             onMouseLeave={handleMouseLeave}
-            onClick={clickedBody} className="buttonliver">Liver</button>
+            onClick={clickedLiver} className="buttonliver">Liver</button>
 
 <button
             onMouseEnter={handleMouseEnterStomach}
             onMouseLeave={handleMouseLeave}
-            onClick={clickedBody} className="buttonstomach">Stomach</button>
+            onClick={clickedStomach} className="buttonstomach">Stomach</button>
 
 
 
 <button
             onMouseEnter={handleMouseEnterIntestines}
             onMouseLeave={handleMouseLeave}
-            onClick={clickedBody} className="buttonintestines">Intestines</button>
+            onClick={clickedIntestine} className="buttonintestines">Intestines</button>
 
 
             </div>
