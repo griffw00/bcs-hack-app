@@ -1,11 +1,13 @@
-import logo from "./logo.svg";
-import "./App.css";
+import "./index.css";
 import { useState, useEffect } from "react";
+import Cell from "./Components/Cell.js";
 
 function App() {
-  const [notes, setNotes] = useState([]);
-
-  return <NotesList notes={notes} address={address} text={text} />;
+  return (
+    <div>
+      <Cell />
+    </div>
+  );
 }
 
 export default App;
