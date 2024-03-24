@@ -1,0 +1,110 @@
+.anatomy-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+.title-container {
+    position: absolute;
+    top: 0;
+    left: 367px;
+    align-items: center;;
+}
+
+.image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Ensure overlay image is on top */
+}
+
+ .buttonlungs {
+    position: absolute; /* Position the button relative to the container */
+    top: 227px; /* Adjust top position as needed */
+    left: 135px; /* Adjust left position as needed */
+    z-index: 1; /* Ensure the button is above the image */
+    padding: 10px 20px;
+    width: 90px; 
+    height: 60px;
+    opacity: 0;
+  }
+  
+  .buttonheart {
+    position: absolute; /* Position the button relative to the container */
+    top: 250px; /* Adjust top position as needed */
+    left: 175px; /* Adjust left position as needed */
+    z-index: 1; /* Ensure the button is above the image */
+    padding: 10px 20px;
+    width: 8px; 
+    height: 35px;
+    opacity: 0;
+  }
+
+  .buttonliver {
+    position: absolute; /* Position the button relative to the container */
+    top: 270px; /* Adjust top position as needed */
+    left: 140px; /* Adjust left position as needed */
+    z-index: 1; /* Ensure the button is above the image */
+    padding: 10px 20px;
+    width: 8px; 
+    height: 40px;
+    opacity: 0;
+  }
+
+  .buttonstomach {
+    position: absolute; /* Position the button relative to the container */
+    top: 280px; /* Adjust top position as needed */
+    left: 175px; /* Adjust left position as needed */
+    z-index: 1; /* Ensure the button is above the image */
+    padding: 10px 20px;
+    width: 50px; 
+    height: 30px;
+    opacity: 0;
+  }
+
+  .buttonintestines {
+    position: absolute; /* Position the button relative to the container */
+    top: 310px; /* Adjust top position as needed */
+    left: 133px; /* Adjust left position as needed */
+    z-index: 1; /* Ensure the button is above the image */
+    padding: 10px 20px;
+    width: 100px; 
+    height: 60px;
+    opacity: 0;
+  }
+
+  .textbox {
+    position: absolute;
+    top: 170px; /* Adjust distance from the button top */
+    left: 300px; /* Adjust distance from the button right */
+    /*background-color: #fff;*/
+    /*border: 3px solid #ccc;*/
+    padding: 3px;
+    font-size: 20px;
+    width: 50px; 
+    height: 40px;
+    z-index: 1;
+
+  }
+  
+  .textboxRight {
+    position: absolute;
+    top: 150px; /* Adjust distance from the button top */
+    left: 367px; /* Adjust distance from the button right */
+    /*background-color: #fff;*/
+    /*border: 3px solid #ccc;*/
+    padding: 5px;
+    font-size: 30px;
+    width: 500px; 
+    height: 320px;
+  }
+
+ 
