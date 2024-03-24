@@ -32,15 +32,13 @@
 
 /* To merge */
 
-.homepage {
-  width: 100%;
-  height: 100%;
-}
-
 video {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+
+.homepage {
+  width: 100%;
+  height: 100%;
 }
 
 .homepage_content {
@@ -60,7 +58,6 @@ video {
   top: 0;
   left: 0;
   width: 100%;
-  height: 116%;
+  height: 100%;
   background-color: rgba(0,0,0,.4);
 }
-

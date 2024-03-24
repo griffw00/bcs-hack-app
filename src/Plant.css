@@ -1,0 +1,276 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.App-header {
+  background-color: rgb(212, 228, 220);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(40px + 2vmin);
+  color: black;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.image-container {
+  position: relative; /* Make sure the container is positioned relatively */
+  display: inline-block; /* Ensure the container only occupies the space it needs */
+}
+
+.button1 {
+  position: absolute; /* Position the button relative to the container */
+  top: 80px; /* Adjust top position as needed */
+  left: 630px; /* Adjust left position as needed */
+  z-index: 1; /* Ensure the button is above the image */
+  padding: 10px 20px;
+  width: 110px; 
+  height: 50px;
+  opacity: 0;
+}
+
+.buttonFlowerImg {
+  position: absolute; /* Position the button relative to the container */
+  top: 50px; /* Adjust top position as needed */
+  left: 330px; /* Adjust left position as needed */
+  z-index: 1; /* Ensure the button is above the image */
+  padding: 10px 20px;
+  width: 110px; 
+  height: 110px;
+  opacity: 0;
+}
+
+.buttonLeafImg {
+  position: absolute; /* Position the button relative to the container */
+  top: 180px; /* Adjust top position as needed */
+  left: 200px; /* Adjust left position as needed */
+  z-index: 1; /* Ensure the button is above the image */
+  padding: 10px 20px;
+  width: 200px; 
+  height: 400px;
+  opacity: 0;
+}
+
+.buttonLeafImg2 {
+  position: absolute; /* Position the button relative to the container */
+  top: 180px; /* Adjust top position as needed */
+  left: 450px; /* Adjust left position as needed */
+  z-index: 1; /* Ensure the button is above the image */
+  padding: 10px 20px;
+  width: 150px; 
+  height: 400px;
+  opacity: 0;
+}
+
+.buttonStemImg {
+  position: absolute; /* Position the button relative to the container */
+  top: 140px; /* Adjust top position as needed */
+  left: 390px; /* Adjust left position as needed */
+  z-index: 1; /* Ensure the button is above the image */
+  padding: 10px 20px;
+  width: 30px; 
+  height: 540px;
+  opacity: 0;
+}
+
+.buttonRootImg {
+  position: absolute; /* Position the button relative to the container */
+  top: 700px; /* Adjust top position as needed */
+  left: 310px; /* Adjust left position as needed */
+  z-index: 1; /* Ensure the button is above the image */
+  padding: 10px 20px;
+  width: 200px; 
+  height: 300px;
+  opacity: 0;
+}
+
+
+.button2 {
+  position: absolute; /* Position the button relative to the container */
+  top: 200px; /* Adjust top position as needed */
+  left: 630px; /* Adjust left position as needed */
+  z-index: 1; /* Ensure the button is above the image */
+  padding: 10px 20px;
+  width: 110px; 
+  height: 50px;
+  opacity: 0;
+}
+
+.buttonLateralBud {
+  position: absolute; /* Position the button relative to the container */
+  top: 255px; /* Adjust top position as needed */
+  left: 630px; /* Adjust left position as needed */
+  z-index: 1; /* Ensure the button is above the image */
+  padding: 10px 20px;
+  width: 110px; 
+  height: 50px;
+  opacity: 0;
+}
+
+.buttonShoot {
+  position: absolute; /* Position the button relative to the container */
+  top: 320px; /* Adjust top position as needed */
+  left: 630px; /* Adjust left position as needed */
+  z-index: 1; /* Ensure the button is above the image */
+  padding: 10px 20px;
+  width: 110px; 
+  height: 50px;
+  opacity: 0;
+}
+
+.buttonLeaf {
+  position: absolute; /* Position the button relative to the container */
+  top: 430px; /* Adjust top position as needed */
+  left: 630px; /* Adjust left position as needed */
+  z-index: 1; /* Ensure the button is above the image */
+  padding: 10px 20px;
+  width: 110px; 
+  height: 50px;
+  opacity: 0;
+}
+
+.buttonStem {
+  position: absolute; /* Position the button relative to the container */
+  top: 640px; /* Adjust top position as needed */
+  left: 630px; /* Adjust left position as needed */
+  z-index: 1; /* Ensure the button is above the image */
+  padding: 10px 20px;
+  width: 120px; 
+  height: 60px;
+  opacity: 0;
+}
+
+.buttonTaproot {
+  position: absolute; /* Position the button relative to the container */
+  top: 710px; /* Adjust top position as needed */
+  left: 630px; /* Adjust left position as needed */
+  z-index: 1; /* Ensure the button is above the image */
+  padding: 10px 20px;
+  width: 120px; 
+  height: 60px;
+  opacity: 0;
+}
+
+.buttonBranchRoot {
+  position: absolute; /* Position the button relative to the container */
+  top: 800px; /* Adjust top position as needed */
+  left: 600px; /* Adjust left position as needed */
+  z-index: 1; /* Ensure the button is above the image */
+  /* padding: 10px 20px; */
+  width: 120px; 
+  height: 60px;
+  opacity: 0;
+}
+
+.buttonShootSystem {
+  position: absolute; /* Position the button relative to the container */
+  top: 340px; /* Adjust top position as needed */
+  left: 20px; /* Adjust left position as needed */
+  z-index: 1; /* Ensure the button is above the image */
+  /* padding: 10px 20px; */
+  width: 120px; 
+  height: 60px;
+  opacity: 0;
+  opacity: 0;
+}
+
+.buttonRootSystem {
+  position: absolute; /* Position the button relative to the container */
+  top: 840px; /* Adjust top position as needed */
+  left: 20px; /* Adjust left position as needed */
+  z-index: 1; /* Ensure the button is above the image */
+  /* padding: 10px 20px; */
+  width: 120px; 
+  height: 60px;
+  opacity: 0;
+}
+
+.image {
+  width: 100%; /* Ensure the image fills the container */
+  height: auto; /* Maintain aspect ratio */
+  pointer-events: none; 
+}
+
+.tooltip {
+  position: absolute;
+  top: 100%; /* Position the tooltip below the button */
+  left: 50%; /* Position the tooltip horizontally centered */
+  transform: translateX(-50%); /* Center the tooltip horizontally */
+  background-color: rgba(0, 0, 0, 0.7); /* Background color of the tooltip */
+  color: #fff; /* Text color of the tooltip */
+  padding: 5px 10px; /* Padding of the tooltip */
+  border-radius: 5px; /* Border radius of the tooltip */
+  font-size: 14px; /* Font size of the tooltip */
+  white-space: nowrap; /* Prevent text wrapping */
+  display: none; /* Initially hide the tooltip */
+}
+
+.button:hover + .tooltip {
+  display: block; /* Show the tooltip when button is hovered */
+}
+
+.textbox {
+  position: absolute;
+  top: 170px; /* Adjust distance from the button top */
+  left: 300px; /* Adjust distance from the button right */
+  /* background-color: #fff; */
+  /* border: 3px solid #ccc; */
+  padding: 3px;
+  font-size: 30px;
+  width: 50px; 
+  height: 60px;
+  z-index: 1;
+}
+
+.textboxRight {
+  position: absolute;
+  top: 550px; /* Adjust distance from the button top */
+  right: 100px; /* Adjust distance from the button right */
+  background-color: #fff;
+  border: 3px solid #ccc;
+  padding: 5px;
+  font-size: 30px;
+  width: 500px; 
+  height: 500px;
+}
+
+.textboxTitle {
+  position: absolute;
+  top: 400px; /* Adjust distance from the button top */
+  right: 100px; /* Adjust distance from the button right */
+  background-color: #fff;
+  border: 3px solid #ccc;
+  padding: 5px;
+  font-size: 60px;
+  width: 500px; 
+  height: 100px;
+}
+
+.button1:hover + .textbox {
+  background-color: #f0f0f0; /* Change background color when button is hovered */
+}
