@@ -1,31 +1,35 @@
-/* Reset some default styles to ensure consistent rendering */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.cell-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Adjust as needed */
-}
-
 /* index.css */
-.small-cell-svg {
-  width: auto;
-  height: auto;
+
+/* Styles for the container of the SVG and tooltip */
+.cell-container {
+  position: relative; /* Ensure positioning context for absolute positioning */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center align items vertically */
 }
 
-.tooltip {
-  display: none;
-  position: absolute;
-  background-color: transparent;
-  color: black;
-  padding: 5px;
-  border-radius: 5px;
+/* Styles for the SVG */
+.small-cell-svg {
+  position: relative;
+  display: flex;
+  align-items: center; 
 }
+
+/* Styles for the tooltip container */
+.tooltip-container {
+  position: absolute; /* Position the tooltip container absolutely */
+  display: none; /* Hide the tooltip by default */
+  background-color: #ffffff; /* Background color of the tooltip */
+  padding: 5px; /* Padding around the tooltip content */
+  border: 1px solid #000000; /* Border of the tooltip */
+  border-radius: 5px; /* Border radius to give rounded corners */
+  top: 5;
+}
+
+/* Show tooltip when hovered over the parent container */
+.cell-container:hover .tooltip-container {
+  display: block; /* Show the tooltip when hovering over the parent container */
+}
+
 
 
 

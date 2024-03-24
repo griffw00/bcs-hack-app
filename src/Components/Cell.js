@@ -7,9 +7,7 @@ function Cell() {
   function showTooltip(evt, text) {
     var tooltip = document.getElementById("tooltip");
     tooltip.innerHTML = text;
-    tooltip.style.display = "black";
-    tooltip.style.left = evt.pageX + 10 + "px";
-    tooltip.style.top = evt.pageY + 10 + "px";
+    tooltip.style.display = "block";
   }
 
   // Prepare organelles
@@ -109,8 +107,8 @@ function Cell() {
 
   return (
     <div className="cell-container">
-      <div id="tooltip" />
       <Cellsvg className="small-cell-svg" />
+      <div className="tooltip-container" id="tooltip" />
     </div>
   );
 }
