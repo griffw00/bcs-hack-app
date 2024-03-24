@@ -1,6 +1,7 @@
 import React from "react";
 import "../index.css";
 import Cellsvg from "../cellimg.jsx";
+import { useEffect } from "react";
 
 function Cell() {
   function showTooltip(evt, text) {
@@ -48,10 +49,10 @@ function Cell() {
     },
   ];
 
-  // Ensure that HTML content is loaded first
-  document.addEventListener("DOMContentLoaded", function () {
+  // Call the attachEventListeners function after component mount
+  useEffect(() => {
     attachEventListeners();
-  });
+  }, []); // Empty dependency array ensures that this effect runs only once after component mount
 
   function attachEventListeners() {
     // Loop through each organelle and add an event listener
