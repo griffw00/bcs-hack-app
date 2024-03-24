@@ -1,16 +1,60 @@
-import logo from './logo.svg';
+import "./index.css";
+import Cell from "./Components/Cell.js";
+import { React, useState }from 'react';
 import './App.css';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import { Anatomy } from './Components/anatomy';
+import { Drawer, List, ListItem, ListItemText, ListItemButton } from '@mui/material';
+import Homepage from './Components/home';
+import Plant from "./Plant.js";
+
+const drawerWidth = 240;
 
 function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Anatomy/>}/>
+  const [currentPage, setCurrentPage] = useState(null); 
+  const DrawerList = ["home", "cells", "plants", "anatomy"];
 
-      </Routes>
-    </Router>
+  function handleListClick(index) {
+    setCurrentPage(index);
+  }
+
+  function renderCurrentComponent() {
+    switch (currentPage) {
+      case 1: 
+        return <Cell />;
+      case 2:
+        return <Plant />
+      case 3: 
+        return <h1>anatomy!??!??!</h1>
+      default: 
+        return <Homepage />
+    }
+  }
+
+  return (
+    <div className="App">
+      <Drawer
+            sx={{
+              width: drawerWidth,
+              flexShrink: 0,
+              '& .MuiDrawer-paper': {
+                width: drawerWidth,
+                boxSizing: 'border-box',
+              },
+            }}
+            variant="permanent"
+            anchor="left">
+        <List>
+          {DrawerList.map((item, index) => (
+            <ListItemButton 
+              key={index}
+              onClick={() => handleListClick(index)}
+            >
+              <ListItemText primary={item} />
+            </ListItemButton>
+          ))}
+        </List>
+      </Drawer>
+      <div style={{ marginLeft: drawerWidth }}> { renderCurrentComponent() } </div>
+    </div>
   );
 }
 
