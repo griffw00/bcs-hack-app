@@ -51,7 +51,6 @@ function App() {
           ))}
         </List>
       </Drawer>
-      <h1>this is the current page: { currentPage }</h1>
       <div> { renderCurrentComponent() } </div>
     </div>
   );
