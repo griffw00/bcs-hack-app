@@ -5,6 +5,7 @@ import './App.css';
 import { Drawer, List, ListItem, ListItemText, ListItemButton } from '@mui/material';
 import Homepage from './Components/home';
 import Plant from "./Plant.js";
+import Anatomy from "./Components/anatomy.jsx";
 
 const drawerWidth = 240;
 
@@ -23,7 +24,7 @@ function App() {
       case 2:
         return <Plant />
       case 3: 
-        return <h1>anatomy!??!??!</h1>
+        return <Anatomy/>
       default: 
         return <Homepage />
     }

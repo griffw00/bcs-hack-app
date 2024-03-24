@@ -3,7 +3,7 @@ import digestiveImage from "../Images/digestive system.png"
 import React, { useState} from "react"
 import "./anatomy.css";
 
-export function Anatomy() {
+function Anatomy() {
     
     const [textBoxText, setTextBoxText] = useState("");
   const [textBoxText2, setTextBoxText2] = useState("");
@@ -126,5 +126,7 @@ export function Anatomy() {
         </div>
     );
 }
+
+export default Anatomy;
 
 
